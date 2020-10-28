@@ -3,44 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Contacts</title>
 </head>
 <body>
-    <table width="98%">
-        <tr>
-            <td>
-                <img class="logo" src="img/logo.png" alt="logo">
-            </td>
-            <td align="right">
-                <div class="nav" align="right">
-                    <a href="index.html" class="nav-btn">MAIN PAGE</a>
-                    <a href="about.html" class="nav-btn">ABOUT ME</a>
-                    <a href="#">CONTACTS</a>
-                    <a href="skills.html">SKILLS</a>
-                    <a href="https://codepen.io/anatoliilycan" class="nav-btn">CODEPEN</a>
-                    
-                </div>
-            </td>
-        </tr>
-    </table>
+    <header>
+        <img class="logo" src="img/logo.png" alt="logo">
+        <div class="nav" align="right">
+            <a href="index.html" class="nav-btn">MAIN PAGE</a>
+            <a href="about.html" class="nav-btn">ABOUT ME</a>
+            <a href="#" class="nav-btn">CONTACTS</a>
+            <a href="skills.html" class="nav-btn">SKILLS</a>
+            <a href="https://codepen.io/anatoliilycan" class="nav-btn">CODEPEN</a>
+            
+        </div>
+    </header>
 
     <main>
-        <hr>
-        <h1>CONTACTS</h1>
-        <hr>
-        <h2>Ukraine, Kyiv, Harmatna str., 51</h2>
-        <h2>Phone: <a href="tel:380981178171">+380 (98) 117-81-71</a></h2>
-        <h2>E-mail: <a href="mailto:turbolycanthrope@icloud.com">turbolycanthrope@icloud.com</a></h2>
-        <hr>
-        <form action="mailto:turbolycanthrope@icloud.com" method="POST" enctype="text/plain">
-            <label for="">Your name:</label>
-            <input type="text" value="John Smith"><br>
-            <label for="">Your email:</label>
-            <input type="email" value="example@mail.com"><br>
-            <label for="">Your message:</label><br>
-            <textarea name="name" cols="30" rows="10"></textarea><br>
-            <input type="submit">
-        </form>
+        <div class="content">
+            <div class="text">
+                <h1>CONTACTS</h1>
+                <h2>Ukraine, Kyiv, Harmatna str., 51</h2>
+                <h2>Phone: <a href="tel:380981178171">+380 (98) 117-81-71</a></h2>
+                <h2>E-mail: <a href="mailto:turbolycanthrope@icloud.com">turbolycanthrope@icloud.com</a></h2>
+                <form action="mailto:turbolycanthrope@icloud.com" method="POST" enctype="text/plain">
+                    <label for="">Your name:</label>
+                    <input type="text" value="John Smith"><br>
+                    <label for="">Your email:</label>
+                    <input type="email" value="example@mail.com"><br>
+                    <label for="">Your message:</label><br>
+                    <textarea name="name" cols="30" rows="10"></textarea><br>
+                    <input type="submit" value="SEND">
+                </form>
+            </div>
+        </div>
     </main>
 </body>
 </html>
