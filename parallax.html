@@ -73,7 +73,7 @@
         transform: translateZ(-3px) scale(2.5);
         background-image: url("img/mountain.png");
     }
-    .midd {
+    .mid {
         transform: translateZ(-1px) scale(1.5);
         background-image: url("img/treeline-midd.png");
     }
@@ -81,6 +81,17 @@
         transform: translateZ(0);
         background-image: url("img/treeline-fore.png");
         height: 100vh;
+    }
+    @media screen and (max-width: 768px) {
+        .back {
+            transform: translateZ(0);
+        }
+        .mid {
+            transform: translateZ(0);
+        }
+        .fore {
+            transform: translateZ(0);
+        }
     }
     </style>
 </head>
