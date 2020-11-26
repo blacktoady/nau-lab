@@ -22,7 +22,6 @@
         header {
             background-color: #fffa9e;
             height: 400px;
-            display: flex;
             background: url(https://images.unsplash.com/photo-1502252430442-aac78f397426?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80) ;
             box-sizing: border-box;
 
@@ -84,6 +83,7 @@
         footer {
             display: flex;
             justify-content: center;
+            align-items: center;
             height: 100px;
             color:#fff;
             background-color: black;
@@ -92,24 +92,35 @@
             display: flex;
             justify-content: center;
         }
-        .content {
+        .content {     
             color:#fff;
-            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            margin-right: 50;
         }
         .text {
-            margin-left: 40vw;
+            text-align: center;
+            width: 100%;
+
         }      
-        @media screen and (max-width: 725px){
-            .text {
-                position: absolute;
-                margin-left: calc(50% + 50px);
+        .content-pht {
+            width: 100%;
+        }
+        @media screen and (max-width: 415px){
+            header {
+                height: 250px;
             }
-            .nav {
-                margin-left: 70px;
-                height: 200px;
+            main {
+                display: flex;
+                justify-content: center;
+            }
+            .paragraph {
+                width: 320px;
+                margin-bottom: 30px;
+            }
+            footer {
+                height: 40px;
             }
 
         } 
@@ -118,16 +129,18 @@
 <body>
     
     <header>
-        <img class="logo" src="img/logo.png" alt="logo">
-        <div class="nav" align="right">
-            <a href="index.html" class="nav-btn">MAIN PAGE</a>
-            <a href="about.html" class="nav-btn">ABOUT ME</a>
-            <a href="contacts.html" class="nav-btn">CONTACTS</a>
-            <a href="skills.html" class="nav-btn">SKILLS</a>
-            <a href="#" class="nav-btn">FOREST</a>
-            <a href="parallax.html" class="nav-btn">PARALLAX</a>
-            <a href="https://codepen.io/anatoliilycan" class="nav-btn">CODEPEN</a>
-        </div>
+        <nav>
+            <img class="logo" src="img/logo.png" alt="logo">
+            <div class="nav" align="right">
+                <a href="index.html" class="nav-btn">MAIN PAGE</a>
+                <a href="about.html" class="nav-btn">ABOUT ME</a>
+                <a href="contacts.html" class="nav-btn">CONTACTS</a>
+                <a href="skills.html" class="nav-btn">SKILLS</a>
+                <a href="#" class="nav-btn">FOREST</a>
+                <a href="parallax.html" class="nav-btn">PARALLAX</a>
+                <a href="https://codepen.io/anatoliilycan" class="nav-btn">CODEPEN</a>
+            </div>
+        </nav>
         <section class="main-h">
             <div class="content">
                 <h1 class="text">FOREST</h2>
@@ -139,11 +152,11 @@
             <p class="paragraph" align="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quibusdam eos deleniti necessitatibus? Voluptatum, culpa? Similique ea molestiae pariatur. Repellat pariatur ducimus consequatur. Praesentium minima eos aspernatur aliquam! In, voluptas?</p>
             <section class="gray-box">
                 <div class="content-g">
-                    <img src="https://images.unsplash.com/photo-1446034295857-c39f8844fad4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="" width="100%" height="200px">
+                    <img src="https://images.unsplash.com/photo-1446034295857-c39f8844fad4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt=""  class="content-pht">
                     <p align="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
                 </div>
                 <div class="content-g">
-                    <img src="https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80" alt="" width="100%" height="200px">
+                    <img src="https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80" alt=""  class="content-pht">
                     <p align="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
                 </div>
             </section>
